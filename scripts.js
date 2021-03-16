@@ -96,15 +96,15 @@ function loadFileInto(fromFile, whereTo) {
 }
 
 //load default preview files
-window.onload = function() {
+// window.onload = function() {
 
-  loadFileInto("ingredientsde.html", "ingredients");
+//   loadFileInto("ingredientsde.html", "ingredients");
 
-  loadFileInto("equipmentde.html", "equipment");
+//   loadFileInto("equipmentde.html", "equipment");
 
-  loadFileInto("directionsde.html", "directions");
+//   loadFileInto("directionsde.html", "directions");
 
-};
+// };
 
 
 //obj construct for recipe
@@ -128,7 +128,7 @@ function Recipe(recipeName, imageURL, contributorName, ingredientFilename, equip
     loadFileInto(this.equipfile, "equipment");
     loadFileInto(this.dirfile, "directions");
     
-    document.querySelector("#macawoni").style.backgroundImage = "rgba(250, 236, 188, 0.45), rgba(127, 63, 191, 0.45)," + "url(" + this.imageUrl + ")";
+    document.querySelector("#macawon").style.backgroundImage = "url('" + this.imageUrl + "')";
   }
 }
 
@@ -139,4 +139,22 @@ FrenchMacarons = new Recipe("French Macarons",
                             "equipment.html",
                             "directions.html",
                             "<li>To ensure macarons are the same size, you can trace 1-inch circles with a pencil on parchment paper, then flip the paper and use the circles as a guide when piping.</li> <li>If you want to dye the macaron batter, add food coloring to egg whites in step 2; make the mixture a few shades darker than desired as baking will lighten the color. Use colors in powders or gel form - liquid food coloring may add too much moisture to the egg mixture and change the consistency.</li> <li>Make sure you bake only 1 baking sheet at a time.</li>"
+                           );
+
+Tofu = new Recipe("Breaded, Fried, Softly Spiced Tofu", 
+                            "http://www.veganricha.com/wp-content/uploads/2015/10/butternut-squash-pilaf-breaded-tofu-steak-0973.jpg",
+                            "Rae Kolke",
+                            "ingredientsTofu.html",
+                            "equipmentTofu.html",
+                            "directionsTofu.html",
+                            "<li>This tofu recipe is completely gorgeous. A former roommate introduced me to some basics with tofu, and over the past few years, I've settled on this ratio of spices and other breading ingredients.</li> <li>The crust on the tofu sticks is tasty and the texture is really wonderful.</li> <li>Serve with a relish or a dip of some sort (I love this with plain yogurt mixed with eggplant brinjal). I usually make this with a cumin-scented rice dish and a garlicky broccoli side.</li>"
+                           );
+
+Tart = new Recipe("Raspberry Streusel Tart", 
+                            "http://www.veganricha.com/wp-content/uploads/2015/10/butternut-squash-pilaf-breaded-tofu-steak-0973.jpg",
+                            "Jack Kay",
+                            "ingredientsTart.html",
+                            "equipmentTart.html",
+                            "directionsTart.html",
+                            "<li>Cover any leftover tart (if any) lightly with an aluminum foil tent. Refrigerate for up to 2 days. Kirschwasser is a cherry-flavored liqueur.</li> <li> Instead of kirschwasser try using framboise, a raspberry-flavored liqueur.</li> <li>Currant or seedless raspberry preserves may be used in place of apricot preserves.</li>"
                            );

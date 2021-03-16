@@ -48,7 +48,7 @@ div {
       rgba(250, 236, 188, 0.45), 
       rgba(127, 63, 191, 0.45)
     );
-  border-radius: 5em;
+  border-radius: 3em;
 }
 
 #nav a{
@@ -73,7 +73,7 @@ div {
 /*   background-repeat: no-repeat; */
   background-attachment: scroll;
   background-position: center;
-  background-size: 90em;
+  background-size: 100%;
 }
 
 .macawon2{
@@ -94,7 +94,7 @@ div {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center;
-  background-size: 90em;
+  background-size: 100%;
 }
 
 h2{
