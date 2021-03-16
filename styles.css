@@ -24,11 +24,12 @@ div {
   width: 80%;
   padding: 1vw;
   padding-bottom:3vw;
-  border:4px dotted gray;
+  border-width: 0px;
   margin-left: auto;
   margin-right:auto;
   background-color: white;
   border-radius: 5em;
+  border:1px dotted pink;
 }
 
 #nav{
@@ -51,7 +52,7 @@ div {
 }
 
 .macawon{
-  max-width: 50%;
+  max-width: 70%;
   display: block;
   overflow: hidden;
   font-family: 'Roboto';
@@ -62,11 +63,8 @@ div {
   box-shadow: 10px 10px 5px grey;
   text-shadow: 2px 2px 1px grey;
   color: black;
-  background-image:  linear-gradient(
-      rgba(127, 63, 191, 0.45), 
-      rgba(255, 0, 0, 0.45)
-    ), none);
-/*     url(https://www.sweetandsavorybyshinee.com/wp-content/uploads/2013/01/Basic-French-Macarons-1.jpg); */
+  background-image: none;
+    );
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center;
@@ -74,7 +72,7 @@ div {
 }
 
 .macawon2{
-  max-width: 50%;
+  max-width: 70%;
   display: block;
   overflow: hidden;
   font-family: 'Roboto';
@@ -122,6 +120,7 @@ h2{
   border-radius: 20em;
   border-width: 1px;
   padding: 1em;
+  background-color: pink;
   
 }
 
@@ -207,7 +206,7 @@ body{
   padding: 1vw;
   margin-top:3vw;
   padding-bottom:3vw;
-  border:8px dotted gray;
+  border:1px dotted pink;
   margin-left: auto;
   margin-right: auto;
   background-color: white;

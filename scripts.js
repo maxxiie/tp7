@@ -10,9 +10,9 @@ window.onclick = function(){
   document.getElementById('headermac').style.color = "#fcedd8";
 }
 notes.style.display = 'none';
-ingredients.style.visibility = 'hidden';
-equipment.style.visibility = 'hidden';
-directions.style.visibility = 'hidden';
+// ingredients.style.visibility = 'hidden';
+// equipment.style.visibility = 'hidden';
+// directions.style.visibility = 'hidden';
 
 var notesdiv = document.getElementById("notes");
 var ingred = document.getElementById("ingredients");
@@ -95,34 +95,40 @@ function loadFileInto(fromFile, whereTo) {
 
 }
 
-// window.onload = function() {
+//load default preview files
+window.onload = function() {
 
-//   loadFileInto("ingredients.html", "ingredients");
+  loadFileInto("ingredientsde.html", "ingredients");
 
-//   loadFileInto("equipment.html", "equipment");
+  loadFileInto("equipmentde.html", "equipment");
 
-//   loadFileInto("directions.html", "directions");
+  loadFileInto("directionsde.html", "directions");
 
-// };
+};
 
 
 //obj construct for recipe
 
-function Recipe(recipeName, imageURL, contributorName, ingredientFilename, equipmentFilename, directionsFilename){
+function Recipe(recipeName, imageURL, contributorName, ingredientFilename, equipmentFilename, directionsFilename, notesStuff){
   this.recipeName = recipeName;
   this.imgsrc = imageURL;
   this.contributor = contributorName;
   this.ingFile = ingredientFilename;
   this.equipfile = equipmentFilename;
   this.dirfile = directionsFilename;
+  this.notesStuff = notesStuff;
   
   //update the screen with this obj recipe info
   this.displayRecipe = function(){
     document.querySelector("#headermac").innerHTML = this.recipeName;
-    document.querySelector("#contr").innerHTML = this.contributor;
-    document.querySelector("#ingredients").innerHTML = this.ingredientsFilename;
-    document.querySelector("#directions").innerHTML = this.directionsFilename;
-    document.querySelector("#equipment").innerHTML = this.equipmentFilename;
+    document.querySelector("#contr").innerHTML =  "Contributed by: " + this.contributor;
+    document.querySelector("#notescontent").innerHTML =  this.notesStuff;
+    
+    loadFileInto(this.ingFile, "ingredients");
+    loadFileInto(this.equipfile, "equipment");
+    loadFileInto(this.dirfile, "directions");
+    
+    document.querySelector("#macawoni").style.backgroundImage = "rgba(250, 236, 188, 0.45), rgba(127, 63, 191, 0.45)," + "url(" + this.imageUrl + ")";
   }
 }
 
@@ -131,5 +137,6 @@ FrenchMacarons = new Recipe("French Macarons",
                             "Max Ciot",
                             "ingredients.html",
                             "equipment.html",
-                            "directions.html"
+                            "directions.html",
+                            "<li>To ensure macarons are the same size, you can trace 1-inch circles with a pencil on parchment paper, then flip the paper and use the circles as a guide when piping.</li> <li>If you want to dye the macaron batter, add food coloring to egg whites in step 2; make the mixture a few shades darker than desired as baking will lighten the color. Use colors in powders or gel form - liquid food coloring may add too much moisture to the egg mixture and change the consistency.</li> <li>Make sure you bake only 1 baking sheet at a time.</li>"
                            );
