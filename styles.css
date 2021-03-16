@@ -6,7 +6,7 @@ h1 {
   font-size: 5rem;
   height: 2vh;
   line-height: 2vh;
-  color: pink;
+  color: yellow;
   font-family: 'Niconne', cursive;
   font-weight: 200px;
   text-shadow: 5px 5px 0px #eb452b, 10px 10px 0px #efa032, 15px 15px 0px #46b59b, 20px 20px 0px #017e7f, 25px 25px 0px #052939, 30px 30px 0px #c11a2b, 2px 2px 1px grey;
@@ -44,6 +44,10 @@ div {
   padding-right: 10%;
   margin-bottom: 5em;
   background-color: pink;
+  background-image:  linear-gradient(
+      rgba(250, 236, 188, 0.45), 
+      rgba(127, 63, 191, 0.45)
+    );
   border-radius: 5em;
 }
 
@@ -63,12 +67,13 @@ div {
   box-shadow: 10px 10px 5px grey;
   text-shadow: 2px 2px 1px grey;
   color: black;
-  background-image: none;
-    );
-  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      rgba(250, 236, 188, 0.45), 
+      rgba(127, 63, 191, 0.45));
+/*   background-repeat: no-repeat; */
   background-attachment: scroll;
   background-position: center;
-  background-size: 60em;
+  background-size: 90em;
 }
 
 .macawon2{
@@ -89,7 +94,7 @@ div {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center;
-  background-size: 60em;
+  background-size: 90em;
 }
 
 h2{
