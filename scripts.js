@@ -1,6 +1,5 @@
 
 
-
 window.onload = function() {
 document.getElementById("headermac").style.fontSize= "85px";
 }
@@ -10,9 +9,9 @@ window.onclick = function(){
   document.getElementById('headermac').style.color = "#fcedd8";
 }
 notes.style.display = 'none';
-// ingredients.style.visibility = 'hidden';
-// equipment.style.visibility = 'hidden';
-// directions.style.visibility = 'hidden';
+ingredients.style.visibility = 'hidden';
+equipment.style.visibility = 'hidden';
+directions.style.visibility = 'hidden';
 
 var notesdiv = document.getElementById("notes");
 var ingred = document.getElementById("ingredients");
@@ -128,7 +127,7 @@ function Recipe(recipeName, imageURL, contributorName, ingredientFilename, equip
     loadFileInto(this.equipfile, "equipment");
     loadFileInto(this.dirfile, "directions");
     
-    document.querySelector("#macawon").style.backgroundImage = "url('" + this.imageUrl + "')";
+    document.querySelector(".macawon").style.backgroundImage = "url(\"" + this.imgsrc + "\")";
   }
 }
 
@@ -151,7 +150,7 @@ Tofu = new Recipe("Breaded, Fried, Softly Spiced Tofu",
                            );
 
 Tart = new Recipe("Raspberry Streusel Tart", 
-                            "http://www.veganricha.com/wp-content/uploads/2015/10/butternut-squash-pilaf-breaded-tofu-steak-0973.jpg",
+                            "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F4468173.jpg",
                             "Jack Kay",
                             "ingredientsTart.html",
                             "equipmentTart.html",

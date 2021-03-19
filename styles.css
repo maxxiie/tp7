@@ -32,6 +32,26 @@ div {
   border:1px dotted pink;
 }
 
+.gridstest {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.gridstest .colu {
+  width: 400px;
+  height: 200px; 
+}
+
+.colu {
+  background: white;
+  padding: 5px;
+  border-radius: 1px;
+  border-style: dotted;
+  border-color:pink;
+}
+
 #nav{
   display:block;
   float: fixed;
@@ -69,7 +89,7 @@ div {
   color: black;
   background-image: linear-gradient(
       rgba(250, 236, 188, 0.45), 
-      rgba(127, 63, 191, 0.45));
+      rgba(127, 63, 191, 0.45)), url("https://media.istockphoto.com/photos/corgi-dog-smile-and-happy-in-summer-sunny-day-picture-id953069774?k=6&m=953069774&s=612x612&w=0&h=S1pb3n3UhhrnViNaEuEM-AsO-rasGU-FaxfQozyPcOE=");
 /*   background-repeat: no-repeat; */
   background-attachment: scroll;
   background-position: center;
@@ -126,7 +146,7 @@ h2{
   border-width: 1px;
   padding: 1em;
   background-color: pink;
-  
+  font-size: 0.8em;
 }
 
 .buttona2:hover{
@@ -207,6 +227,7 @@ body{
   
   div {
   display:inline-block;
+  vertical-align: top;
   width: 30%;
   padding: 1vw;
   margin-top:3vw;
@@ -215,7 +236,7 @@ body{
   margin-left: auto;
   margin-right: auto;
   background-color: white;
-  }
+  }  
   
 }
 
@@ -230,19 +251,91 @@ body{
   @media screen and (max-width: 575px){
   h1 {
   text-align: center;
+  padding: 2rem;
   /*   font-family: 'Potta One', cursive; */
-  font-size: 2em;
+  font-size: 10%;
   height: 2vh;
-  line-height: 10vh;
-  color: purple;
-
-  font-weight: 200px;
+  line-height: 2vh;
+  color: yellow;
+  font-family: 'Roboto';
+  font-weight: 100px;
   text-shadow: none;
+  line-height: 80px;
+  margin-bottom: 12rem;
+  }
     
-  font-family: 'Potta One';
+   @media screen and (max-width: 575px){
+  .macawon {
+  max-width: 100%;
+  display: block;
+  overflow: hidden;
+  font-family: 'Roboto';
+  border: solid 1px black;
+  border-radius: 1em;
+  margin: 3em auto;
+  background-color: pink;
+  box-shadow: 10px 10px 5px grey;
+  text-shadow: 2px 2px 1px grey;
+  color: black;
+  background-image: linear-gradient(
+      rgba(250, 236, 188, 0.45), 
+      rgba(127, 63, 191, 0.45));
+/*   background-repeat: no-repeat; */
+  background-attachment: scroll;
+  background-position: center;
+  background-size: 100%;
+  padding: 5em;
+  }
+     
+    @media screen and (max-width: 575px){
+  .macawon2 {
+  max-width: 100%;
+  display: block;
+  overflow: hidden;
+  font-family: 'Roboto';
+  border: solid 1px black;
+  border-radius: 1em;
+  margin: 3em auto;
+  background-color: pink;
+  box-shadow: 10px 10px 5px grey;
+  text-shadow: 2px 2px 1px grey;
+  color: black;
+  background-image: linear-gradient(
+      rgba(250, 236, 188, 0.45), 
+      rgba(127, 63, 191, 0.45));
+/*   background-repeat: no-repeat; */
+  background-attachment: scroll;
+  background-position: center;
+  background-size: 100%;
+  }
+      
+     @media screen and (max-width: 575px){
+       #line {
+         display: none;
+       }
+    
+ /*aaaaaa*/
+  @media screen and (max-width: 575px){
+  buttona2 {
+  text-align: center;
+  /*   font-family: 'Potta One', cursive; */
+  font-size: 5em;
+  height: 1vh;
+  line-height: 5vh;
+  color: purple;
+  margin-left: auto;
+  margin-right:auto;
+  font-weight: 100px;
+  text-shadow: none;
+  float: left;
+  font-family: 'Roboto';
   color: white;
   }
-  
+      
+    
+    
+    
+    
 }
 
 
